@@ -1,0 +1,16 @@
+body {
+  background-color: lightgray;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+}
+
+.btn {
+  cursor: pointer;
+}
