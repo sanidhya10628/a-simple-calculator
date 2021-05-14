@@ -14,3 +14,15 @@ body {
 .btn {
   cursor: pointer;
 }
+
+#equation{
+  background-color: yellow;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#show{
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 20px;
+}

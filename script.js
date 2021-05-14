@@ -1,19 +1,50 @@
-// document.querySelector("#show").innerHTML = 7 * 8;
-document.querySelector("#one").addEventListener("click", function () {
-  document.querySelector("#show").innerHTML = 1;
-});
+// Current Equation for solving
+let str='';
+console.log(str)
 
-// document.querySelector("#show").innerHTML = 7 * 8;
-document.querySelector("#two").addEventListener("click", function () {
-  const initialNumber = String(document.querySelector('#show').innerHTML);
-  if(Number(initialNumber)===0)
-  {
-    document.querySelector('#show').innerHTML = 2;
-  }
-  else
-  {
-    // console.log(initialNumber);
-    const finalNumber = initialNumber + 2;
-    document.querySelector("#show").innerHTML = finalNumber;
-  }
-});
+// Click event for Numbers Click
+let numbers = document.getElementsByClassName('number')
+// console.log(numbers);
+for (let i = 0;i<numbers.length;i++)
+{
+  numbers[i].addEventListener('click',function(){
+    let a = Number(document.getElementsByClassName('number')[i].innerHTML);
+    console.log(a,typeof a);
+    
+    str = str + a;
+    console.log(str);
+    document.getElementById('equation').innerHTML = str;
+  })
+}
+
+
+// Click event for operators
+let operators = document.getElementsByClassName('operator');
+for(let i = 0;i<operators.length;i++)
+{
+  operators[i].addEventListener('click',function(){
+    let a = document.getElementsByClassName('operator')[i].innerHTML;
+    console.log(a);
+
+    if(str===''){
+      alert("Invalid Syntax!");
+    }
+    else{
+      str = str + a;
+      document.getElementById('equation').innerHTML = str;
+    }
+  })
+}
+
+// Click Event for Clear
+document.querySelector('#clear').addEventListener('click',function(){
+  str = '';
+  document.getElementById('equation').innerHTML = '';
+})
+
+// Click Event for Equals Operator
+document.querySelector('#equals').addEventListener('click',function(){
+  // let num1 = Number(str[0]);
+  // let num2 = Number(str[2]);
+  document.getElementById('show').innerHTML = eval(str);
+})
