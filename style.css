@@ -11,12 +11,13 @@ header{
   font-family: 'Hind', sans-serif;
   color: whitesmoke;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 30px;
+  color: #ffc300;
 }
 
 .main{
-  width: 70%;
+  width: 60%;
   margin: 20px auto;
   text-align: center;
   color: whitesmoke;
@@ -33,7 +34,7 @@ header{
   /*background-color: #90e0ef;*/
   border: none;
   /*background-color:whitesmoke;*/
-  font-size: 16px;
+  font-size: 22px;
   color: black;
   background-color: #90e0ef;
   /*font-family: 'Pattaya', sans-serif;*/
@@ -43,8 +44,8 @@ header{
 
 #show{
   /*background-color: lightgreen;*/
-  padding: 20px 20px;
-  font-size: 1.5rem;
+  padding: 30px 30px;
+  font-size: 2rem;
   background-color: #90e0ef;
   height: 40px;
   text-align: center;
