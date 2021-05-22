@@ -1,28 +1,61 @@
 body {
-  background-color: lightgray;
+  /*background-color: lightgray;*/
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  background-color: #201d2c;
+  /*font-family: 'Pattaya', sans-serif;*/
+  font-family: 'Libre Baskerville', serif;
+}
+header{
+  font-family: 'Hind', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
+.main{
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  color: whitesmoke;
+}
 .contents {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
+  grid-gap: 10px;
+  background-color: #90e0ef;
 }
 
 .btn {
   cursor: pointer;
+  /*background-color: #90e0ef;*/
+  border: none;
+  /*background-color:whitesmoke;*/
+  font-size: 16px;
+  color: black;
+  background-color: #90e0ef;
+  /*font-family: 'Pattaya', sans-serif;*/
+  font-family: 'Libre Baskerville', serif;
 }
 
-#equation{
-  background-color:yellow;
-  padding: 10px;
-  font-size: 20px;
-}
 
 #show{
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
+  padding: 20px 20px;
+  font-size: 1.5rem;
+  background-color: #90e0ef;
+  height: 40px;
+  text-align: center;
+  overflow: auto;
+  /*margin-bottom: 10px;*/
+  background-color: whitesmoke;
+  color: black;
+  background-color: #90e0ef;
+}
+.gap{
+  background-color: #90e0ef;
+  /*background-color: black;*/
   padding: 10px;
-  font-size: 20px;
 }
